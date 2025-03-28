@@ -1,0 +1,209 @@
+
+
+ /* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #181818;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Estructura general */
+header, section, footer {
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Encabezado principal */
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Sección del formulario */
+.form h2, .form h3 {
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.form input,
+/* Contenedor principal para la parte izquierda y derecha */
+.form-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Espacio entre las columnas */
+  margin-top: 20px;
+}
+
+.form-left, .form-right {
+  width: 48%; /* 48% para dar espacio entre las dos columnas */
+}
+
+.form-left {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-right {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-left h2, .form-right h3 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.form-left input, .form-right input, .form-right select {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.form-left button, .form-right button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.form-left button:hover, .form-right button:hover {
+  background-color: #0056b3;
+}
+
+
+.form button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.form button:hover {
+  background-color: #0056b3;
+}
+
+/* Lista de procesos */
+.process-list {
+  padding: 10px;
+  background-color: #eef6ff;
+  border-left: 5px solid #007bff;
+  min-height: 50px;
+}
+
+/* Simulación visual */
+.simulation {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 10px;
+  background-color: #e7f4e9;
+  border-left: 5px solid #28a745;
+}
+
+.simulation .bar {
+  height: 30px;
+  border-radius: 5px;
+  background-color: #28a745;
+  text-align: center;
+  color: white;
+  padding: 5px;
+  font-weight: bold;
+  animation: progress 1s ease-in-out;
+}
+
+/* Tabla de características */
+.features-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.features-table th,
+.features-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.features-table th {
+  background-color: #f1f1f1;
+}
+
+/* Recursos */
+.resources ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.resources li {
+  margin: 10px 0;
+}
+
+.resources a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.resources a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+/* Animaciones */
+@keyframes progress {
+  from {
+    width: 0;
+    opacity: 0.5;
+  }
+  to {
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .form input,
+  .form select {
+    max-width: 100%;
+  }
+
+  .simulation {
+    flex-direction: column;
+  }
+}
