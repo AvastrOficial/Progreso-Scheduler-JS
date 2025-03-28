@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Process Scheduler JS</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🧠 Process Scheduler JS</h1>
+    <p>
+      Simulador interactivo de planificación de procesos en sistemas operativos.
+      Aprende cómo funcionan los algoritmos de planificación como FIFO, Round Robin y por Prioridad.
+    </p>
+  </header>
+
+  <section class="form-container">
+  <section class="form-left">
+    <h2>📋 Agregar Proceso</h2>
+    <input type="text" id="name" placeholder="Nombre del Proceso" />
+    <input type="number" id="burstTime" placeholder="Tiempo de CPU" min="1" />
+    <input type="number" id="priority" placeholder="Prioridad" min="1" />
+    <button onclick="addProcess()">Agregar</button>
+  </section>
+
+  <section class="form-right">
+    <h3>⚙️ Configuración del Algoritmo</h3>
+    <select id="algorithm">
+      <option value="FIFO">FIFO</option>
+      <option value="RR">Round Robin</option>
+      <option value="PRIORITY">Prioridad</option>
+    </select>
+    <input type="number" id="quantum" placeholder="Quantum (RR)" min="1" value="2"/>
+    <button onclick="startSimulation()">Iniciar Simulación</button>
+  </section>
+</section>
+
+
+  <section class="process-list" id="processList"></section>
+  <section class="simulation" id="simulation"></section>
+
+  <section class="info">
+    <h2>📌 Características destacadas:</h2>
+    <table class="features-table">
+      <thead>
+        <tr>
+          <th>Característica</th>
+          <th>Detalle</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Algoritmos</td>
+          <td>FIFO, Round Robin, Prioridad</td>
+        </tr>
+        <tr>
+          <td>Visualización</td>
+          <td>Animación con barras de progreso</td>
+        </tr>
+        <tr>
+          <td>Quantum configurable</td>
+          <td>Para Round Robin</td>
+        </tr>
+        <tr>
+          <td>Modularidad</td>
+          <td>Separación entre lógica y vista</td>
+        </tr>
+        <tr>
+          <td>Escalable</td>
+          <td>Puedes agregar más algoritmos fácilmente</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="resources">
+    <h2>📚 Recursos recomendados</h2>
+    <ul>
+      <li><a href="https://es.wikipedia.org/wiki/Planificaci%C3%B3n_de_procesos" target="_blank">Wikipedia: Planificación de procesos</a></li>
+      <li><a href="https://www.geeksforgeeks.org/cpu-scheduling-in-operating-systems/" target="_blank">GeeksforGeeks: CPU Scheduling</a></li>
+      <li><a href="https://www.javatpoint.com/os-cpu-scheduling" target="_blank">Javatpoint: CPU Scheduling Algorithms</a></li>
+      <li><a href="https://youtu.be/kZ3v0NQ1Abs" target="_blank">🎥 YouTube: Simulación visual de algoritmos de planificación</a></li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>Desarrollado con ❤️ por BSZ · Proyecto educativo </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
