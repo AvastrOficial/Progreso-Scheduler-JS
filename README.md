@@ -28,8 +28,6 @@
    - La simulación mostrará las barras de progreso que indican el estado de cada proceso mientras se ejecuta.
 
 ## Estructura del Proyecto
-## Funciones en `script.js`
-
 ### `addProcess()`
 
 Agrega un nuevo proceso a la lista de procesos. Recoge el nombre, el tiempo de CPU y la prioridad introducidos por el usuario.
@@ -45,10 +43,6 @@ Inicia la simulación de los procesos según el algoritmo de planificación sele
 ### `renderProgress(p, time)`
 
 Muestra la barra de progreso visual de un proceso mientras se ejecuta.
-
-## Requisitos
-
-No se requieren dependencias externas para ejecutar este proyecto. Todo el código está escrito en HTML, CSS y JavaScript puro.
 
 ## Contribuciones
 
