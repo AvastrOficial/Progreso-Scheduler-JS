@@ -47,3 +47,9 @@ Muestra la barra de progreso visual de un proceso mientras se ejecuta.
 ## Contribuciones
 
 Si deseas contribuir a este proyecto, por favor realiza un fork del repositorio y envía un pull request con las mejoras o correcciones.
+
+![image](https://github.com/user-attachments/assets/1c74ef15-4312-4e0f-a1e4-ffbd4e55b89e)
+![image](https://github.com/user-attachments/assets/a3ce7afa-67dc-4bec-9914-4ef8f9db9278)
+![image](https://github.com/user-attachments/assets/2e78f5e6-d1bf-4024-ac03-aef68b79f480)
+
+
